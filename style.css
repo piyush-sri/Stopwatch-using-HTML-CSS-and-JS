@@ -102,3 +102,30 @@ li:last-child{
 li span{
     font-weight: 700;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 8px;		/* Adjust padding for smaller screens */
+    }
+
+    .timer {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Reduce box-shadow for smaller screens */
+    }
+
+    .timer span {
+        width: 70px; /* Adjust the width of timer elements for smaller screens */
+    }
+
+    .controls {
+        gap: 0.25rem; /* Reduce the gap between controls for smaller screens */
+    }
+}
+@media screen and (max-width: 300px) {
+    .timer {
+        width: 150px; /* Adjust the width for smaller screens */
+        height: 75px; /* Adjust the height for smaller screens */
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+}
